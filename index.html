@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolikkopeli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kolikkopeli</h1>
+        <div id="balance">Saldo: 100€</div>
+        <div>
+            <label for="betAmount">Panos:</label>
+            <select id="betAmount">
+                <option value="0.10">0.10€</option>
+                <option value="0.20">0.20€</option>
+                <option value="0.50">0.50€</option>
+                <option value="1">1€</option>
+                <option value="5">5€</option>
+            </select>
+        </div>
+        <div id="reels" class="reels">
+            <span id="reel1" class="reel">🍒</span>
+            <span id="reel2" class="reel">🍋</span>
+            <span id="reel3" class="reel">🔔</span>
+        </div>
+        <button id="spinButton">Pyöräytä kiekot</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
